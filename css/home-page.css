@@ -392,11 +392,7 @@ ul {
         font-size: 36px;
     }
     .section-1-img-3 {
-        width: 25%;
-        margin-right: 0%;
-        background-color: transparent;
-        opacity: 0;
-        background-color: transparent;
+         opacity: 0;
         transform: translateX(0px);
         transition: all 1s ease-in-out;
     }

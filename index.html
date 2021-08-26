@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="fav/site.webmanifest">
+    <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Lysergic Mind Studios</title>
+    <link rel="stylesheet" href="css/home-page.css">
+    <link rel="stylesheet" href="css/scrollBar.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <canvas class="noise"></canvas>
+    <div class="navbar">
+        <a href="#mainpage">
+            <h1 class="lsm">LMS</h1>
+        </a>
+    </div>
+
+    <div class="fullpageMenu" id="nav">
+        <div class="nav">
+            <ul>
+                <li><a href="#mainpage" onclick="menuToggle()">start</a></li>
+                <li><a href="#work" onclick="menuToggle()">our work</a></li>
+                <li><a href="#ourservices" onclick="menuToggle()">what do we do?</a></li>
+                <li><a href="#contactus" onclick="menuToggle()">Say hello!</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+    </div>
+
+    <main class="mainpage" id="mainpage">
+
+        <div class="main-card" id="container1">
+            <h1 class="main-card-text">Lysergic Mind Studios</h1>
+            <img class="img-brain" src="img/brain.svg" alt="brain">
+        </div>
+
+        <section class="section-1 " id="s1 ">
+            <img class="section-1-img " src="img/charlie.jpg " alt=" ">
+            <img class="section-1-img-2 " src="img/lisset.jpg " alt=" ">
+
+            <div class="card-information">
+                <p>We are a company dedicated to the <b>creation</b> of <b>digital</b> and <b>audiovisual</b> content.</p>
+            </div>
+        </section>
+
+        <section class="section-2 " id="s2">
+            <div class="information-idea">
+                <p>We help startups and companies, with design and development</p>
+            </div>
+            <img class="section-1-img-3 " src="img/ipromter.png " alt=" ">
+        </section>
+
+        <div class="section-3 " id="work">
+            <div class="work-card">
+                <h1>WORK</h1>
+            </div>
+            <div class="projects">
+                <ul class="proj">
+                    <li class="hover_img"> <a>Lissete Lie<span><img src="img/lisset.jpg" alt="image" height="100" width="100" /></span></a></li>
+                    <li class="hover_img"> <a>Ipromoter<span><img src="img/tit.png" alt="image" height="100" /></span></a></li>
+                    <li class="hover_img"> <a>Charlie M<span><img src="img/CharlieM.jpg" alt="image" height="100" /></span></a></li>
+                    <li class="hover_img"> <a>University P.<span><img src="img/up.jpg" alt="image" height="100" /></span></a></li>
+                    <li class="hover_img"> <a>Alter<span><img src="img/alter.jpg" alt="image" height="100" /></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="section-4 " id="ourservices">
+            <div class="services-card">
+                <h1>OUR SERVICES</h1>
+            </div>
+
+            <div class="service-info">
+                <div class="service">
+                    <h1>Digital design</h1>
+                    <ul>
+                        <li>Photography</li>
+                        <li>Ilustrations</li>
+                        <li>Graphic design</li>
+                        <li>Digital art</li>
+                    </ul>
+                </div>
+                <div class="service">
+                    <h1>Software design</h1>
+                    <ul>
+                        <li>Web design</li>
+                        <li>Web development</li>
+                        <li>eCommerce</li>
+                        <li>Mobile apps</li>
+                    </ul>
+                </div>
+                <div class="service">
+                    <h1>Audiovisual</h1>
+                    <ul>
+                        <li>Musical composition</li>
+                        <li>Musical production</li>
+                        <li>video</li>
+                        <li>Video editing</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section class="section-5 " id="contactus">
+            <div class="contact">
+                <h1 class="title">Say hello!</h1><br>
+                <a href="mailto:Lysergic@estudio.com">
+                    <h1 class="email">Lysergic@estudio.com</h1>
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+
+    </main>
+
+    <script src="js/menu-overlay.js "></script>
+</body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js "></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js "></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js "></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js "></script>
+<script src="js/home-page.js "></script>
+
+
+
+
+</html>

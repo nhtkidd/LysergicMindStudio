@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    font-family: 'Poppins';
+}
+
+.navbar {
+    font-family: 'Poppins';
+    z-index: 999;
+    position: fixed;
+    width: 100px;
+    height: 100%;
+    background-color: transparent;
+    border-right: solid 1px white;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+.lsm {
+    color: black;
+    margin-top: 85vh;
+    background-color: white;
+    font-size: 3em;
+    transform: rotate(-90deg);
+}
+
+a {
+    mix-blend-mode: difference;
+    text-decoration: none;
+}
+
+@media (max-width: 1199.98px) {}
+
+
+/* //Pantallas medianas (tablets de menos de 992px) */
+
+@media (max-width: 991.98px) {}
+
+
+/* //Pantallas pequeñas (móviles en landscape de menos de 768px) */
+
+@media (max-width: 767.98px) {}
+
+
+/* //Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
+
+@media (max-width: 575.98px) {
+    .navbar {
+        font-family: 'Poppins';
+        z-index: 999;
+        height: 10%;
+        position: fixed;
+        background-color: transparent;
+        border-right: solid 1px transparent;
+        color: white;
+    }
+    .lsm {
+        display: none;
+    }
+}
+
+.fullpageMenu {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    transition: 0.5s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fullpageMenu.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.fullpageMenu nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.fullpageMenu li {
+    list-style: none;
+}
+
+.fullpageMenu nav ul {
+    position: relative;
+}
+
+.fullpageMenu nav ul li {
+    position: relative;
+    list-style: none;
+    padding: 0 20px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+.fullpageMenu ul li a {
+    background-color: transparent;
+    position: relative;
+    text-decoration: none;
+    font-size: 10em;
+    padding: 0 10px;
+    color: rgba(255, 255, 255, 0.452);
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+    .fullpageMenu ul li a {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .fullpageMenu ul li a {
+        font-size: 2em;
+    }
+}
+
+.fullpageMenu ul li a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.menuicon {
+    z-index: 999;
+    position: fixed;
+    top: 20px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+    background: transparent url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png);
+    background-size: 100%;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    mix-blend-mode: difference;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.menuicon.active {
+    z-index: 999;
+    position: fixed;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    background: transparent url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-512.png);
+    background-size: 100%;
+}

@@ -625,7 +625,7 @@ ul {
         width: 100%;
         height: 25vh;
         background: transparent;
-        margin-top: 30px;
+        margin-top: 35px;
     }
     .service h1 {
         font-size: 24px;
@@ -638,7 +638,7 @@ ul {
         list-style: none;
         font-size: 20px;
         letter-spacing: 3px;
-        line-height: 35px;
+        line-height: 30px;
     }
     /* ultima seccion */
     .title {

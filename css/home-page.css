@@ -84,9 +84,6 @@ canvas {
 .section-3 {
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #F3F3F3;
 }
 
@@ -196,9 +193,8 @@ canvas {
 }
 
 .projects {
-    position: relative;
     top: 0%;
-    left: -30%;
+    margin-left: 10%;
 }
 
 .proj {
@@ -311,6 +307,14 @@ ul {
     color: white
 }
 
+.work-mobile {
+    display: none;
+}
+
+.mob {
+    display: none;
+}
+
 
 /* MEEDIA QUERYS */
 
@@ -327,172 +331,19 @@ ul {
 
 /* //Pantallas pequeñas (móviles en landscape de menos de 768px) */
 
-@media (max-width: 767.98px) {
-    /* Primera seccio de la pagina (start) */
-    .main-card-text {
-        font-size: 3.5rem;
-        letter-spacing: 10px;
-        line-height: 1;
-        text-align: left;
-    }
-    .main-card-text {
-        letter-spacing: 1px;
-        line-height: 1;
-        text-align: center;
-        width: 100%;
-    }
-    .img-brain {
-        width: 50%;
-        top: 30%;
-        right: 1%;
-    }
-    /* segunda seccion */
-    .section-1 {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-    }
-    .section-1-img {
-        position: absolute;
-        width: 50%;
-        margin-top: 75%;
-        opacity: 0;
-        transform: translateY(0px);
-        transition: all 1s ease-in-out;
-    }
-    .section-1-img-2 {
-        position: absolute;
-        width: 50%;
-        margin-top: 75%;
-        opacity: 0;
-        transform: translateY(0px);
-        transition: all 1s ease-in-out;
-    }
-    .card-information p {
-        padding-left: 10%;
-        background: transparent;
-        color: black;
-        font-size: 36px;
-    }
-    /* tercera seccion */
-    .section-2 {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-    }
-    .information-idea p {
-        padding-left: 10%;
-        background-color: #F3F3F3;
-        color: black;
-        font-size: 36px;
-    }
-    .section-1-img-3 {
-        opacity: 0;
-        transform: translateX(0px);
-        transition: all 1s ease-in-out;
-    }
-    /* cuarta seccion */
-    .section-3 {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-    }
-    .work-card {
-        position: relative;
-        top: -45%;
-        right: -40%;
-        font-size: 10px;
-    }
-    .proj li>a {
-        color: black;
-        font-family: "Poppins";
-        font-weight: 300;
-        font-style: italic;
-        line-height: initial;
-        font-size: 36px;
-        text-decoration: none;
-    }
-    .hover_img img {
-        position: absolute;
-        transform: scale(1.5, 1.5);
-    }
-    .hover_img a {
-        position: relative;
-    }
-    .hover_img a span {
-        position: absolute;
-        opacity: 0;
-        left: 0%;
-        z-index: 99;
-        transition: 0.3s ease-in-out;
-    }
-    /* Quinta seccion */
-    .section-4 {
-        width: 100%;
-    }
-    .services-card {
-        text-align: left;
-        margin-left: 5%;
-        font-size: 30px;
-        transform: rotate(0deg);
-    }
-    .services-card h1 {
-        text-align: center;
-        color: transparent;
-        text-shadow: .5vw .5vw transparent;
-        -webkit-text-stroke: 2px#E1E8EF;
-    }
-    .service-info {
-        position: absolute;
-        left: 5%;
-        top: 20%;
-        width: 90%;
-        height: 100vh;
-        color: white;
-        border-color: white;
-        background: transparent;
-        border-top-style: none;
-        border-right-style: solid;
-        border-bottom-style: none;
-        border-left-style: solid;
-    }
-    .service {
-        position: relative;
-        width: 100%;
-        height: 25vh;
-        background: transparent;
-    }
-    .service h1 {
-        font-size: 24px;
-    }
-    .service h1,
-    ul {
-        padding: 5px 20px;
-    }
-    .service li {
-        list-style: none;
-        font-size: 20px;
-        letter-spacing: 3px;
-        line-height: 30px;
-    }
-    /* ultima seccion */
-    .title {
-        font-size: 3em;
-        color: white;
-        text-align: center;
-    }
-    .email {
-        text-align: center;
-        font-size: 30px;
-        color: white
-    }
-}
+@media (max-width: 767.98px) {}
 
 
 /* //Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
 
 @media (max-width: 575.98px) {
     /* Primera seccio de la pagina (start) */
+    .desk {
+        display: none;
+    }
+    .mob {
+        display: flex;
+    }
     .main-card-text {
         font-size: 3.5rem;
         letter-spacing: 10px;
@@ -513,13 +364,13 @@ ul {
     /* segunda seccion */
     .section-1 {
         width: 100%;
-        height: 120vh;
+        height: 100vh;
         display: flex;
     }
     .section-1-img {
         position: absolute;
         width: 50%;
-        margin-top: 90%;
+        margin-top: 75%;
         opacity: 0;
         transform: translateY(0px);
         transition: all 1s ease-in-out;
@@ -527,7 +378,7 @@ ul {
     .section-1-img-2 {
         position: absolute;
         width: 50%;
-        margin-top: 85%;
+        margin-top: 75%;
         opacity: 0;
         transform: translateY(0px);
         transition: all 1s ease-in-out;
@@ -545,50 +396,63 @@ ul {
         display: flex;
     }
     .information-idea p {
-        padding-left: 15%;
+        padding-left: 10%;
         background-color: #F3F3F3;
         color: black;
         font-size: 36px;
     }
     .section-1-img-3 {
-        opacity: 0;
+        opacity: 1;
         transform: translateX(0px);
         transition: all 1s ease-in-out;
     }
     /* cuarta seccion */
     .section-3 {
+        display: none;
+    }
+    /* AREA DE TRABAJO SOLO PARA VERSION MOBILE */
+    .work-mobile {
+        background-color: black;
         width: 100%;
-        height: 100vh;
-        display: flex;
+        height: 100%;
+        display: grid;
     }
-    .work-card {
-        position: relative;
-        top: -45%;
-        right: -40%;
-        font-size: 10px;
+    .project {
+        height: 250px;
+        background-color: black;
     }
-    .proj li>a {
-        color: black;
-        font-family: "Poppins";
-        font-weight: 300;
-        font-style: italic;
-        line-height: initial;
+    #project1 {
+        height: 100px;
+    }
+    .project h1 {
+        color: white;
         font-size: 36px;
-        text-decoration: none;
+        text-align: center;
     }
-    .hover_img img {
-        position: absolute;
-        transform: scale(1.5, 1.5);
+    .project2 {
+        height: 250px;
+        background-color: black;
     }
-    .hover_img a {
-        position: relative;
+    .project p {
+        color: white;
+        font-size: 20px;
+        margin-left: 70%;
     }
-    .hover_img a span {
-        position: absolute;
-        opacity: 0;
-        left: 0%;
-        z-index: 99;
-        transition: 0.3s ease-in-out;
+    .project img {
+        padding: 15px 15px;
+        width: 80%;
+        height: 155px;
+    }
+    .project2 p {
+        color: white;
+        font-size: 20px;
+        margin-left: 10%;
+    }
+    .project2 img {
+        margin-left: 10%;
+        padding: 15px 15px;
+        width: 80%;
+        height: 155px;
     }
     /* Quinta seccion */
     .section-4 {

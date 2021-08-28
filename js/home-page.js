@@ -55,15 +55,6 @@ var pinIntoScene2 = new ScrollMagic.Scene({
     .setTween(TweenMax.to("#work ", 1, {}))
     .addTo(controller);
 
-var pinIntoScene3 = new ScrollMagic.Scene({
-    triggerElement: '#ourservices',
-    triggerHook: 0,
-    duration: '500 %'
-})
-
-.setPin('#ourservices')
-    .setTween(TweenMax.to("#ourservices ", 1, {}))
-    .addTo(controller);
 
 
 

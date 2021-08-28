@@ -66,19 +66,21 @@ canvas {
 .section-1 {
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: #F3F3F3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
 }
 
 .section-2 {
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: #F3F3F3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
 }
 
 .section-3 {
@@ -90,8 +92,11 @@ canvas {
 .section-4 {
     width: 100%;
     height: 100vh;
-    display: flex;
     background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
 }
 
 .section-5 {
@@ -104,27 +109,27 @@ canvas {
 }
 
 .section-1-img {
-    width: 25%;
-    margin-left: 10%;
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 25%;
     opacity: 0;
     transform: translateY(150px);
     transition: all 1s ease-in-out;
 }
 
 .section-1-img-2 {
-    width: 25%;
-    margin-top: 5%;
-    padding-top: 150px;
-    margin-left: -10%;
+    width: 50%;
+    margin-left: 40%;
+    margin-top: -47%;
     opacity: 0;
-    background-color: transparent;
-    transform: translateX(150px);
+    transform: translateY(150px);
     transition: all 1s ease-in-out;
 }
 
 .section-1-img-3 {
-    width: 25%;
-    margin-right: 15%;
+    width: 35%;
+    margin-left: 30%;
+    margin-top: 20%;
     background-color: transparent;
     opacity: 0;
     background-color: transparent;
@@ -156,9 +161,25 @@ canvas {
     color: blanchedalmond;
 }
 
+.card-information {
+    background-color: transparent;
+    box-sizing: border-box;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+}
+
+.images-card {
+    float: right;
+    background-color: transparent;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+}
+
 .card-information p {
-    padding-left: 10%;
-    background: transparent;
+    padding-left: 20%;
+    padding-top: 30%;
     color: black;
     font-size: 4em;
 }
@@ -169,13 +190,23 @@ canvas {
 }
 
 .information-idea {
-    margin-top: -0%;
-    background: transparent;
+    box-sizing: border-box;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+}
+
+.information-img {
+    background-color: transparent;
+    box-sizing: border-box;
+    position: relative;
+    width: 50%;
+    height: 100vh;
 }
 
 .information-idea p {
+    padding-top: 30%;
     padding-left: 10%;
-    background-color: #F3F3F3;
     color: black;
     font-size: 4em;
 }
@@ -187,7 +218,7 @@ canvas {
 }
 
 .work-card h1 {
-    background: #F3F3F3;
+    background: transparent;
     color: black;
     font-size: 5em;
 }
@@ -204,12 +235,11 @@ canvas {
 
 .proj li>a {
     color: black;
-    font-size: 5em;
+    font-size: 4.4em;
     font-family: "Poppins";
     font-weight: 300;
     font-style: italic;
     line-height: initial;
-    font-size: 6em;
     text-decoration: none;
 }
 
@@ -237,13 +267,17 @@ canvas {
 }
 
 .services-card {
-    margin-left: 65%;
-    font-size: 8em;
+    margin-left: 30%;
+    background-color: transparent;
+    width: 40%;
+    height: 10%;
+    margin-top: 30%;
+    font-size: 6em;
     transform: rotate(-90deg);
 }
 
 .services-card h1 {
-    text-align: right;
+    text-align: left;
     color: transparent;
     text-shadow: .5vw .5vw transparent;
     -webkit-text-stroke: 2px#E1E8EF;
@@ -251,7 +285,7 @@ canvas {
 
 .service-info {
     position: absolute;
-    left: 300px;
+    left: 15%;
     width: 40%;
     height: 100vh;
     color: white;
@@ -276,14 +310,14 @@ canvas {
 
 .service h1,
 ul {
-    padding: 20px 20px;
+    padding: 3% 3% 0% 3%;
 }
 
 .service li {
     list-style: none;
     font-size: 1.5em;
     letter-spacing: 3px;
-    line-height: 45px;
+    line-height: 5vh;
 }
 
 .contact {
@@ -318,15 +352,253 @@ ul {
 
 /* MEEDIA QUERYS */
 
+@media (max-width: 1366px) {
+    .hover_img img {
+        position: absolute;
+        transform: scale(3, 3);
+    }
+}
+
 
 /* //Pantallas grandes (desktops de menos de 1200px) */
 
-@media (max-width: 1199.98px) {}
+@media (max-device-width: 1024px) {
+    .card-information p {
+        padding-left: 25%;
+        padding-top: 30%;
+        color: black;
+        font-size: 2.5em;
+    }
+    .information-idea p {
+        padding-top: 30%;
+        padding-left: 10%;
+        color: black;
+        font-size: 2.5em;
+    }
+    .work-card h1 {
+        background: transparent;
+        color: black;
+        font-size: 5em;
+    }
+    .proj li>a {
+        font-size: 3em;
+    }
+    .hover_img img {
+        position: absolute;
+        transform: scale(2, 2);
+    }
+    .services-card {
+        margin-left: 30%;
+        margin-top: 50%;
+        font-size: 4.5em;
+    }
+    .service h1 {
+        font-size: 2em;
+    }
+    .title {
+        font-size: 2em;
+        color: white;
+        text-align: center;
+    }
+    .email {
+        text-align: center;
+        font-size: 3em;
+        color: white
+    }
+}
 
 
 /* //Pantallas medianas (tablets de menos de 992px) */
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+    .desk {
+        display: none;
+    }
+    .mob {
+        display: flex;
+    }
+    .main-card-text {
+        font-size: 7rem;
+        letter-spacing: 10px;
+        line-height: 1;
+        text-align: left;
+    }
+    .main-card-text {
+        letter-spacing: 1px;
+        line-height: 1;
+        text-align: center;
+        width: 60%;
+    }
+    .card-information {
+        width: 100%;
+        height: 40%;
+    }
+    .images-card {
+        width: 100%;
+        height: 50%;
+    }
+    .card-information p {
+        text-align: justify;
+        padding: 10%;
+        background: transparent;
+        color: black;
+        font-size: 6vw;
+    }
+    .section-1-img {
+        position: absolute;
+        width: 40%;
+        margin-top: 0%;
+        opacity: 1;
+        transform: translateY(0px);
+        transition: all 1s ease-in-out;
+    }
+    .section-1-img-2 {
+        position: absolute;
+        width: 40%;
+        margin-top: 30%;
+        margin-left: 40%;
+        opacity: 1;
+        transform: translateY(0px);
+        transition: all 1s ease-in-out;
+    }
+    .information-idea {
+        width: 100%;
+    }
+    .information-idea p {
+        text-align: justify;
+        padding: 10%;
+        background: transparent;
+        color: black;
+        font-size: 6vw;
+    }
+    .information-img {
+        background-color: turquoise;
+        width: 100%;
+        height: 0;
+    }
+    .section-1-img-3 {
+        margin-top: 50%;
+        opacity: 1;
+        transform: translateX(0px);
+        transition: all 1s ease-in-out;
+    }
+    /* cuarta seccion */
+    .section-3 {
+        display: none;
+    }
+    /* AREA DE TRABAJO SOLO PARA VERSION MOBILE */
+    .work-mobile {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        display: grid;
+    }
+    .project {
+        height: 500px;
+        background-color: black;
+    }
+    #project1 {
+        height: 100px;
+    }
+    .project h1 {
+        color: white;
+        font-size: 36px;
+        text-align: center;
+    }
+    .project2 {
+        height: 500px;
+        background-color: black;
+    }
+    .project p {
+        color: white;
+        font-size: 20px;
+        margin-left: 70%;
+    }
+    .project img {
+        padding: 15px 15px;
+        width: 80%;
+        height: 350px;
+    }
+    .project2 p {
+        color: white;
+        font-size: 20px;
+        margin-left: 10%;
+    }
+    .project2 img {
+        margin-left: 10%;
+        padding: 15px 15px;
+        width: 80%;
+        height: 350px;
+    }
+    /* Quinta seccion */
+    .section-4 {
+        width: 100%;
+        height: 100%;
+    }
+    .services-card {
+        width: 50%;
+        text-align: center;
+        margin-left: 0%;
+        font-size: 3.5em;
+        margin-top: 0%;
+        transform: rotate(0deg);
+    }
+    .services-card h1 {
+        text-align: center;
+        color: transparent;
+        text-shadow: .5vw .5vw transparent;
+        -webkit-text-stroke: 2px#E1E8EF;
+    }
+    .service-info {
+        position: relative;
+        left: 0%;
+        top: 20%;
+        width: 90%;
+        height: 100%;
+        color: white;
+        border-color: white;
+        background: transparent;
+        border-top-style: none;
+        border-right-style: solid;
+        border-bottom-style: none;
+        border-left-style: solid;
+    }
+    .service {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        height: 30vh;
+        background: transparent;
+        margin-top: 35px;
+    }
+    .service h1 {
+        font-size: 3em;
+    }
+    .service h1,
+    ul {
+        padding: 5px 20px;
+    }
+    .service li {
+        list-style: none;
+        font-size: 2em;
+        letter-spacing: 3px;
+        line-height: 40px;
+    }
+    /* ultima seccion */
+    .section-5 {
+        position: relative;
+    }
+    .title {
+        font-size: 3em;
+        color: white;
+        text-align: center;
+    }
+    .email {
+        text-align: center;
+        font-size: 3.5em;
+        color: white
+    }
+}
 
 
 /* //Pantallas pequeñas (móviles en landscape de menos de 768px) */
@@ -354,7 +626,7 @@ ul {
         letter-spacing: 1px;
         line-height: 1;
         text-align: center;
-        width: 100%;
+        width: 90%;
     }
     .img-brain {
         width: 50%;
@@ -364,44 +636,62 @@ ul {
     /* segunda seccion */
     .section-1 {
         width: 100%;
-         height: 120vh;
-        display: flex;
+        height: 100vh;
     }
     .section-1-img {
         position: absolute;
         width: 50%;
-        margin-top: 90%;
-        opacity: 0;
+        margin-top: 0%;
+        opacity: 1;
         transform: translateY(0px);
         transition: all 1s ease-in-out;
     }
     .section-1-img-2 {
         position: absolute;
         width: 50%;
-        margin-top: 90%;
-        opacity: 0;
+        margin-top: 30%;
+        margin-left: 40%;
+        opacity: 1;
         transform: translateY(0px);
         transition: all 1s ease-in-out;
     }
+    .card-information {
+        width: 100%;
+        height: 40%;
+    }
+    .images-card {
+        width: 100%;
+        height: 50%;
+    }
     .card-information p {
-        padding-left: 10%;
+        text-align: justify;
+        padding: 10%;
         background: transparent;
         color: black;
-        font-size: 36px;
+        font-size: 8vw;
     }
     /* tercera seccion */
     .section-2 {
         width: 100%;
-         height: 100vh;
-        display: flex;
+        height: 100vh;
+    }
+    .information-idea {
+        width: 100%;
     }
     .information-idea p {
-        padding-left: 10%;
-        background-color: #F3F3F3;
+        text-align: justify;
+        padding: 10%;
+        background: transparent;
         color: black;
-        font-size: 36px;
+        font-size: 10vw;
+    }
+    .information-img {
+        background-color: turquoise;
+        width: 100%;
+        height: 0;
     }
     .section-1-img-3 {
+        margin-top: 100%;
         opacity: 1;
         transform: translateX(0px);
         transition: all 1s ease-in-out;
@@ -457,10 +747,12 @@ ul {
     /* Quinta seccion */
     .section-4 {
         width: 100%;
+        height: 100%;
     }
     .services-card {
-        text-align: left;
-        margin-left: 5%;
+        width: 100%;
+        text-align: center;
+        margin-left: 0%;
         font-size: 30px;
         transform: rotate(0deg);
     }
@@ -471,11 +763,11 @@ ul {
         -webkit-text-stroke: 2px#E1E8EF;
     }
     .service-info {
-        position: absolute;
-        left: 5%;
-        top: 20%;
+        position: relative;
+        left: 0%;
+        top: 0%;
         width: 90%;
-        height: 100vh;
+        height: 100%;
         color: white;
         border-color: white;
         background: transparent;
@@ -505,6 +797,9 @@ ul {
         line-height: 25px;
     }
     /* ultima seccion */
+    .section-5 {
+        position: relative;
+    }
     .title {
         font-size: 3em;
         color: white;
